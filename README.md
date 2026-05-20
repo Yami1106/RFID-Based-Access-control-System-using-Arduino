@@ -1,42 +1,48 @@
 <div align="center">
 
-<pre>
-╔════════════════════════════════════════════════════════╗
-║     💻  RFID-Based-Access-control-System-using-Arduino  💻     ║
-╚════════════════════════════════════════════════════════╝
-</pre>
+# RFID Access Control System — Arduino
 
-## Project Repository
+[![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://isocpp.org)
+[![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)](https://arduino.cc)
 
-
+*A contactless door access control system using RFID cards — grants or denies entry based on a whitelist of authorised card UIDs.*
 
 </div>
 
 ---
 
-## About
+## How it works
 
-A Python project repository. See the source code for details.
+```
+RFID card tap → RC522 reader → UID extracted → Whitelist check
+                                              → Authorised: relay unlocks + green LED
+                                              → Denied: buzzer + red LED
+```
 
 ---
 
 ## Features
 
-- See source code for details
+- MFRC522 RFID reader over SPI
+- UID-based whitelist (easily extendable)
+- Relay-controlled door lock
+- LED + buzzer feedback for access granted/denied
+- Serial log of all access attempts
 
 ---
 
-## Tech Stack
+## Hardware
 
-_See source_
-
----
-
-## Author
-
-**Ashish (Yami1106)**
-[GitHub](https://github.com/Yami1106) · [Portfolio](https://yamiportfolio.netlify.app/)
+`Arduino Uno` · `MFRC522 RFID Module` · `RFID Cards/Fobs` · `Relay` · `LEDs` · `Buzzer`
 
 ---
 
-*Generated with [Automate_contribution](https://github.com/Yami1106/Automate_contribution)*
+## Tech stack
+
+`C++` · `Arduino IDE` · `MFRC522 library`
+
+---
+
+<div align="center">
+<a href="https://github.com/Yami1106">Ashish Sukumar</a>
+</div>
