@@ -46,3 +46,4 @@ RFID card tap → RC522 reader → UID extracted → Whitelist check
 <div align="center">
 <a href="https://github.com/Yami1106">Ashish Sukumar</a>
 </div>
+<!-- -->
